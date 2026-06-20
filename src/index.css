@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* ---------- LAYOUT ---------- */
+
+.page-container {
+  padding: 28px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* ---------- CARD (IMPORTANT FIX) ---------- */
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(12px);
+
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+/* ---------- TEXT ---------- */
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+
+/* ---------- BADGES ---------- */
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-green {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.badge-blue {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.badge-yellow {
+  background: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+}
+
+/* ---------- SELECT FIX ---------- */
+
+select {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
